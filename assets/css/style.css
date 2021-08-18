@@ -230,10 +230,66 @@ li {
   text-transform: uppercase; 
 }
 
+.header-bottom .bar { text-indent: -9999px; }
+.hamburger { display: none; }
 
+.menu { 
+  width: 47%;
+  display: flex;
+}
 
+.menu nav {
+  margin-top: 49px;
+  flex-basis: 100%;
+}
 
+.menu nav ul:first-child { display: flex; }
 
+.menu nav ul li { 
+  flex-basis: 20%;
+  text-align: center;
+  text-transform: capitalize; 
+}
+
+.menu ul li a { color: #858386; }
+
+.sub-menu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sub-menu::after {
+  content: "\f0d7";
+  color: #7C7E80;
+  font-family: "FontAwesome";
+}
+
+.sub-menu .sub-active::after {
+  content: "\f0d8";
+  color: #fff;
+  font-family: "FontAwesome";
+}
+
+.sub-menu ul {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #f9f9f9;
+}
+
+.sub-menu ul li {
+  margin-left: 0; 
+  display: block; 
+}
+
+.sub-menu ul li a {
+  color: #7C7E80;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+}
 
 /*=================================
   Header styling ends here
@@ -296,6 +352,18 @@ li {
     transition: 1s;
   }
   
+  .menu ul li a:hover {
+    color: #5167B4;
+    transition: 1s;
+  }
 
+  .sub-menu ul li a:hover { background-color: #f1f1f1;}
+  .sub-menu:hover ul { display: block;}
+
+  .sub-menu:hover::after {
+    content: "\f0d8";
+    color: #7C7E80;
+    font-family: "FontAwesome";
+  }
 
 }  
