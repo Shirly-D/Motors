@@ -407,7 +407,7 @@ li {
   text-transform: capitalize;    
 }
 
-.foundation-section .active {
+.foundation-section .tab .active {
   border: 3px solid #AFB5BB;
   border-bottom: none; 
   color: #2B46A9;
@@ -483,7 +483,7 @@ li {
   transition: 0.3s;
 }
 
-.active,
+.accord-box .active,
 .accord:hover {
   background-color: #32489A;
   color: #fff;
@@ -518,10 +518,11 @@ li {
   overflow: hidden;
 }
 
-.active { display: block; }
+.foundation-section .tab-hide .active { display: block; }
 .none { display: none; }
+.active { display: block; }
 
-.tab-hide { display: none; }
+/* .tab-hide { display: none; } */
 /* foundation section end */
 
 
