@@ -413,14 +413,14 @@ li {
   color: #2B46A9;
 }
 
-.foundation-section .wrapper div:first-child figure { 
+.foundation-section .leadership figure { 
   width: 40%; 
   display: inline-block;
   vertical-align: top;
 }
-.foundation-section .wrapper div:first-child { padding: 9px 50px; }
+.foundation-section .leadership { padding: 9px 50px; }
 
-.foundation-section .wrapper div:first-child p {
+.foundation-section .leadership p {
   width: 53%;
   margin-top: 40px;
   margin-left: 5%;
@@ -431,7 +431,97 @@ li {
   line-height: 33px;
 }
 
+.leadership p span { border-bottom: 2px solid #919396; }
+.leadership p::first-letter { text-transform: capitalize; }
 
+.history {
+  padding: 0 4% 25px;
+  margin-top: 30px;
+}
+
+.history-filter { 
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.history-filter li { 
+  width: 10%;
+  padding: 10px 15px;
+  color: gray;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;    
+}
+
+.history-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.history-images li { 
+  width: 33%;
+  border: 1px solid #5167B4;
+}
+
+.sustain { padding: 15px 35px; }
+
+.sustain ul {
+  width: 60%;
+  margin: 60px auto;
+}
+
+
+.accord-box:first-child { margin-top: 0; }
+.accord-box { margin-top: 20px; }
+
+.accord {
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.active,
+.accord:hover {
+  background-color: #32489A;
+  color: #fff;
+}
+
+.accord::after {
+  content: "\f067";
+  height: 80px;
+  color: #919396;
+  font-family: "FontAwesome";
+  float: right;
+}
+
+.accord-box.active .content { 
+  height: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.accord-box.active .accord::after { 
+  content: "\f00d";
+  font-family: "FontAwesome";
+ }
+
+ .content {
+  height: 0;
+  background-color: #AFB5BB;
+  color: #fff;
+  font-size: 17px;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+}
+
+.active { display: block; }
+.none { display: none; }
+
+.tab-hide { display: none; }
 /* foundation section end */
 
 
@@ -513,6 +603,12 @@ li {
     border-bottom: none;
     color: #2B46A9;
     transition: 0.3s;
+  }
+
+  .history-filter li:hover {
+    background-color: #5167B4;
+    color: #fff;
+    transition: 1s;
   }
   /* main end */
 }  
