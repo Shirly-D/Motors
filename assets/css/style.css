@@ -767,20 +767,21 @@ footer .wrapper {
 
 footer .logo {
   width: 40%;
-  color: #7B7D7E;
   font-size: 46px;
   line-height: 42px;
 }
 
+footer .logo a { color: #7B7D7E; }
+
 footer .logo span { display: block; }
 footer .for { font-weight: bold; }
 footer .more { font-weight: 900; }
-footer .wrapper div:nth-child(2) { width: 42%; }
+footer .wrapper div:nth-child(2) { width: 48%; }
 
 footer .motor {
   font-size: 17px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
   text-transform: uppercase;
 }
 
@@ -831,7 +832,7 @@ footer .motor {
   height: 20px;
   padding: 0 13px;
   border-right: 1px solid #727272;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 25px;
   text-transform: capitalize;
@@ -931,6 +932,11 @@ footer .motor {
 
   .footer-links li a:hover {
     color: #32489A;
+    transition: 1s;
+  }
+
+  footer .logo a:hover {
+    color: #5167B4;
     transition: 1s;
   }
   /* footer end */
