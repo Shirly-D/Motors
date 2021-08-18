@@ -299,9 +299,113 @@ li {
   main styling starts here
 =================================*/
 
+/* banner section start */
+
+.banner { position: relative; }
+
+.banner .wrapper {
+  max-width: 1518px;
+  width: 100%;
+}
+
+.banner .wrapper div {
+  width: 80%;
+  padding: 31px 2% ;
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);    
+}
+
+.banner ul li:first-child { 
+  border-bottom: 1px solid #7C7E80;
+  margin-left: 0;
+}
+
+.banner ul { margin-bottom: 20px; }
+
+.banner ul li {
+  margin-left: 2%;
+  color: #7C7E80;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.banner li a { color: inherit; }
+
+.banner ul li::before {
+  content: "\f105";
+  margin-right: 10px;
+  color: #7C7E80;
+  font-family: "FontAwesome";
+}
+
+.banner ul li:first-child:before { 
+  content: "";
+  margin-right: 0;
+}
+
+.banner div p {
+  color: #2B46AA;
+  font-size: 40px;
+}
+
+.banner div p span {
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+/* banner section end */
+
+/* video section start */
+
+.video-section p {
+  padding: 40px 30px;
+  color: #7F8F99;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.video-section p::first-letter { text-transform: capitalize; }
+
+.video-section iframe {
+  width: 57%;
+  height: 413px;
+  margin: 0 auto;
+  display: block;   
+}
+
+/* video section end */
+
+/* foundation-section start */
+
+.foundation-section h2 {
+  padding: 10px 30px 38px;
+  color: #32489A;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.foundation-section h2::first-letter { text-transform: capitalize; }
+.foundation-section ul li { width: 40%; }
+
+.foundation-section ul { 
+  border-bottom: 2px solid gray;
+  margin-bottom: 43px;
+  display: flex; 
+}
 
 
+.foundation-section ul button {
+  width: 100%;
+  padding: 34px;
+  color: #32489A;
+  font-size: 30px;
+  text-transform: capitalize;    
+}
 
+/* foundation section end */
 
 
 
@@ -333,6 +437,8 @@ li {
 }  
 
 @media only screen and (min-width: 996px) {
+
+  /* header start */
 
   .header-top .search:hover {
     color: #000;
@@ -366,4 +472,14 @@ li {
     font-family: "FontAwesome";
   }
 
+  /* header end */
+
+  /* main start */
+
+  .banner li a:hover {
+    color: #5167B4;
+    transition: 1s;
+  }
+
+  /* main end */
 }  
