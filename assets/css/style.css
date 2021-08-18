@@ -610,7 +610,7 @@ li {
 .reviews .wrapper {
   max-width: 1518px;
   width: 83%;
-  padding: 45px 0 35px;
+  padding: 40px 0 2px;
 }
 
 .reviews .employees {
@@ -644,7 +644,7 @@ li {
 
 .rating-review {
   border: 1px solid #28489A;
-  margin: 35px auto;
+  margin: 30px auto;
   display: flex;
 }
 
@@ -662,10 +662,14 @@ li {
   justify-content: center;
 }
 
+.star-rating div:first-child span { font-size: 25px; }
+.star-rating div:first-child { margin-right: 5%; }
+
 .filled,
 .half-star,
 .hollow-star {
-  font-size: 20px;
+  color: #28489A;
+  font-size: 25px;
   font-family: "FontAwesome";
   text-indent: -9999px;
   float: right;
@@ -680,12 +684,65 @@ li {
 
 .filled::after { content: "\f005"; }
 .half-star::after { content: "\f123"; }
-.hollow-star::after { content: "\f006"; }
 
+.hollow-star::after { 
+  content: "\f005";
+  color: #D5D5D5;
+}
 
+.percent-rating {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+}
 
+.percent-rating div:first-child {
+  margin-top: 30px;
+  margin-right: 13%;
+  color: #28489A;
+  font-size: 20px;
+}
 
+.percent-rating div:first-child::after { 
+  content: "\f295";
+  color: #28489A;
+  font-size: 15px;
+  font-family: "FontAwesome";
+}
 
+.percent-rating div:last-child span {
+  color: #595959;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.percent-rating ul li { 
+  display: block; 
+  color: #272727;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.percent-rating ul li { text-transform: capitalize; }
+
+.percent-rating ul li::before {
+  content: "\f111";
+  margin-right: 6%;
+  font-size: 10px;
+  font-family: "FontAwesome";
+}
+
+.percent-rating ul li::after {
+  content: "\f295";
+  margin-left: 15%;
+  font-size: 10px;
+  font-family: "FontAwesome"; 
+}
+
+.percent-rating ul li:first-child::before { color: #28489A; }
+.percent-rating ul li:nth-child(2):before { color: #CBCBCB; }
+.percent-rating ul li:last-child::before { color: #C31C0C; }
 
 /* review  section end*/
 
@@ -700,10 +757,95 @@ li {
   footer styling starts here
 =================================*/ 
 
+footer { background-color: #F2F3F5; }
 
+footer .wrapper { 
+  padding: 50px 0 115px;
+  display: flex;
+  justify-content: space-between; 
+}
 
+footer .logo {
+  width: 40%;
+  color: #7B7D7E;
+  font-size: 46px;
+  line-height: 42px;
+}
 
+footer .logo span { display: block; }
+footer .for { font-weight: bold; }
+footer .more { font-weight: 900; }
+footer .wrapper div:nth-child(2) { width: 42%; }
 
+footer .motor {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.icons {
+  width: 98%;
+  margin-bottom: 25px;
+  text-align: end;
+}
+
+.icons li a { text-indent: -9999px; }
+
+.icons li a::before {
+  margin-left: 11%;
+  float: right;
+  font-size: 22px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
+
+.facebook::before {
+  content: \f09a;
+  color: #365C94;
+}
+
+.twitter::before {
+  content: "\f099";
+  color: #31A7E3;
+}
+
+.linkedin::before {
+  content: "\f0e1";
+  color: #2887B6;
+}
+
+.youtube::before {
+  content: "\f167";
+  color: #DB3E2C;
+}
+
+.google::before {
+  content: "\f1a0";
+  color: #7EC346;
+}
+
+.footer-links { margin-bottom: 20px; }
+
+.footer-links li {
+  height: 20px;
+  padding: 0 13px;
+  border-right: 1px solid #727272;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.footer-links li a { color: #A4A5A8; }
+
+.copyright {
+  color: #97989A;
+  font-size: 15px;
+  text-align: end;
+  text-transform: capitalize;
+  
+}
 
 
  /*=================================
@@ -783,7 +925,13 @@ li {
     transition: 1s;
   }
 
-
-
   /* main end */
+
+  /* footer start*/
+
+  .footer-links li a:hover {
+    color: #32489A;
+    transition: 1s;
+  }
+  /* footer end */
 }  
