@@ -100,12 +100,135 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 84%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+
+.header-top {
+  padding: 35px 0;
+  display: flex;
+  justify-content: flex-end;  
+}
+
+.header-top form {
+  width: 16%;
+  border: 2px solid #C9CACB;
+  display: flex;
+  position: relative;
+}
+
+.header-top form input { 
+  padding: 4px 11px; 
+  border: none;
+}
+
+.header-top form input::placeholder { 
+  color: #B9B9BD;
+  font-size: 18px;
+}
+
+.header-top .search {
+  width: 16%;
+  padding: 8px 0;
+  border: none;
+  margin-top: 1px;
+  position: absolute;
+  right: 1%;
+  background-color: #fff;
+  color: #B9B9BD;
+  text-indent: -9999px;    
+}
+
+.header-top .search::before {
+  content: "\f002";
+  margin-right: 20%;
+  color: inherit;
+  float: right;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  text-indent: 0; 
+}
+
+.header-top div span:last-child {
+  color: #9391A0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.header-top div .favorite { 
+  color: #858386;
+  text-indent: -9999px; 
+}
+
+.header-top div .favorite::before {
+  content: "\f08a";
+  color: inherit;
+  font-family: "FontAwesome";
+  font-size: 25px;
+}
+
+.header-top div {
+  padding: 4px 18px;
+  border-right: 2px solid #9391A0;
+}
+
+.header-top ul {
+  width: 13%;
+  padding: 12px 0 12px 16px;
+}
+
+.header-top ul li a { text-indent: -9999px; }
+.header-top ul li:first-child { margin-left: 0; }
+.header-top ul li { margin-left: 6%; }
+.header-top ul li a { color: #858386; }
+
+.header-top ul li a::before {
+  color: inherit;
+  font-family: "FontAwesome";
+  font-size: 25px;
+  float: right;
+  text-indent: 0;
+}
+
+.header-top ul li .facebook::before { content: "\f09a";}
+.header-top ul li .twitter::before { content: "\f099";}
+.header-top ul li .linkedin::before { content: "\f0e1";}
+.header-top ul li .youtube::before { content: "\f167";}
+.header-top ul li .google::before { content: "\f1a0";}
+
+.header-bottom {
+  border-bottom: 2px solid #C5C6C6;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-bottom h1 { font-size: 40px; }
+.header-bottom h1 a .made { color: #5167B4; }
+
+.header-bottom h1 a .for { 
+  color: #2B46AA;
+  font-weight: bold;
+}
+
+.header-bottom h1 a .more {
+  color: #2B46A9;
+  font-weight: 900;
+}
+
+.header-bottom h1 a .motor {
+  display: block;
+  color: #7C7E80;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase; 
+}
 
 
 
@@ -149,6 +272,30 @@ li {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+
+
+}  
+
+@media only screen and (min-width: 996px) {
+
+  .header-top .search:hover {
+    color: #000;
+    transition: 0.5s;
+  }
+
+  .header-top ul li a:hover {
+    color: #000;
+    transition: 0.6s;
+  }
+
+  .header-top div .favorite:hover::before { 
+    content: "\f004";
+    color: #858386; 
+    font-family: "FontAwesome";
+    font-size: 25px;
+    transition: 1s;
+  }
+  
 
 
 }  
