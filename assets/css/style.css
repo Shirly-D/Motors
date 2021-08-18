@@ -483,7 +483,7 @@ li {
   transition: 0.3s;
 }
 
-.accord-box .active,
+.accord-box.active,
 .accord:hover {
   background-color: #32489A;
   color: #fff;
@@ -499,8 +499,7 @@ li {
 
 .accord-box.active .content { 
   height: auto;
-  padding-top: 10px;
-  padding-left: 20px;
+  padding: 15px 34px;
   margin: 0 auto;
 }
 
@@ -515,15 +514,46 @@ li {
   color: #fff;
   font-size: 17px;
   transition: 0.5s ease-out;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.foundation-section .tab-hide .active { display: block; }
+.foundation-section .leadership .active { 
+  display: block;
+  background-color: #32489A;
+  color: #fff;
+}
+
 .none { display: none; }
 .active { display: block; }
 
-/* .tab-hide { display: none; } */
+.tab-hide { display: none; }
+
 /* foundation section end */
+
+/* motors start */
+
+.motors-section .wrapper {
+  max-width: 1518px;
+  width: 100%;
+}
+
+.motors-section .wrapper div:first-child {
+  width: 32%;
+  padding: 70px 0% 90px 12%;
+  background-color: #F2F3F5;
+}
+
+.motors-section div h3,
+.mobility-section div h3 {
+  margin-bottom: 50px;
+  color: #2E489A;
+  font-size: 33px;
+  font-weight: bolder;
+}
+
+
+
+/* motors end */
 
 
 
