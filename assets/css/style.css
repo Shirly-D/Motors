@@ -532,28 +532,103 @@ li {
 
 /* motors start */
 
+.motors-section { background-color: #F2F3F5;}
+
 .motors-section .wrapper {
   max-width: 1518px;
   width: 100%;
+  display: flex;
 }
 
 .motors-section .wrapper div:first-child {
-  width: 32%;
-  padding: 70px 0% 90px 12%;
-  background-color: #F2F3F5;
+  width: 34.5%;
+  padding: 70px 4% 90px 12%;
+  display: inline-block;
 }
 
 .motors-section div h3,
 .mobility-section div h3 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #2E489A;
   font-size: 33px;
   font-weight: bolder;
 }
 
+.motors-section div:first-child li {
+  color: #8A8086;
+  font-size: 22px;
+}
 
+.motors-section .wrapper div:first-child li::first-letter { text-transform: capitalize; }
+
+.motors-section div:first-child li span {
+  color: #727272;
+  font-weight: bolder;
+  line-height: 32px;
+}
+
+.motors-section .wrapper div:last-child {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.motors-section .wrapper div:last-child figure { border: 1px solid #fff;}
 
 /* motors end */
+
+/* mobolity starts */
+
+.mobility-section .wrapper {
+  max-width: 1518px;
+  width: 100%;
+  display: flex;
+}
+
+.mobility-section figure { width: 50%; }
+
+.mobility-section .wrapper div {
+  width: 34%;
+  padding: 56px 0% 110px 5%;
+}
+
+.mobility-section div h3::first-letter,
+.mobility-section div p::first-letter { text-transform: capitalize;}
+
+.mobility-section div p {
+  color: #8E8E8E;
+  font-size: 22px;
+  line-height: 30px;
+}
+/* mobility ends */
+
+/* review section start */
+
+.reviews { background-color: #28489A;}
+
+.reviews .wrapper {
+  max-width: 1518px;
+  width: 83%;
+  padding: 45px 0 35px;
+}
+
+.reviews .wrapper div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews .wrapper div:first-child h3 {
+  color: #fff;
+  font-size: 39px;
+}
+
+.reviews .wrapper div:first-child h3::first-letter { text-transform: capitalize; }
+
+
+
+
+
+/* review  section end*/
 
 
 
@@ -618,6 +693,7 @@ li {
     content: "\f0d8";
     color: #7C7E80;
     font-family: "FontAwesome";
+    transition: 1s;
   }
 
   /* header end */
