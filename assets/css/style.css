@@ -388,21 +388,35 @@ li {
 }
 
 .foundation-section h2::first-letter { text-transform: capitalize; }
-.foundation-section ul li { width: 40%; }
+.foundation-section ul li { width: 34%; }
 
 .foundation-section ul { 
-  border-bottom: 2px solid gray;
   margin-bottom: 43px;
   display: flex; 
 }
 
-
-.foundation-section ul button {
+.foundation-section .tab {
   width: 100%;
   padding: 34px;
-  color: #32489A;
-  font-size: 30px;
+  border: none;
+  border-bottom: 4px solid #AFB5BB;
+  background-color: #fff;
+  color: #B3B7BC;
+  font-size: 26px;
+  font-weight: bold;
   text-transform: capitalize;    
+}
+
+.foundation-section .tab:hover {
+  border: 3px solid #AFB5BB;
+  border-bottom: none;
+  color: #2B46A9;
+  transition: 0.3s;
+}
+
+.foundation-section .active {
+  border: 3px solid #AFB5BB;
+  border-bottom: none; 
 }
 
 /* foundation section end */
