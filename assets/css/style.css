@@ -388,9 +388,9 @@ li {
 }
 
 .foundation-section h2::first-letter { text-transform: capitalize; }
-.foundation-section ul li { width: 34%; }
+.foundation-section .tab-list li { width: 34%; }
 
-.foundation-section ul { 
+.foundation-section .tab-list { 
   margin-bottom: 43px;
   display: flex; 
 }
