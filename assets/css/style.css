@@ -108,7 +108,7 @@ li {
 =================================*/
 
 .header-top {
-  padding: 35px 0;
+  padding: 35px 0 26px;
   display: flex;
   justify-content: flex-end;  
 }
@@ -153,6 +153,7 @@ li {
 }
 
 .header-top div span:last-child {
+  display: inline-block;
   color: #9391A0;
   font-size: 18px;
   font-weight: bold;
@@ -160,8 +161,10 @@ li {
 }
 
 .header-top div .favorite { 
+  padding: 0 19px; 
   color: #858386;
   text-indent: -9999px; 
+  float: left;
 }
 
 .header-top div .favorite::before {
@@ -169,6 +172,8 @@ li {
   color: inherit;
   font-family: "FontAwesome";
   font-size: 25px;
+  float: left;
+  text-indent: 0;
 }
 
 .header-top div {
@@ -760,7 +765,7 @@ li {
 footer { background-color: #F2F3F5; }
 
 footer .wrapper { 
-  padding: 50px 0 115px;
+  padding: 54px 0 90px;
   display: flex;
   justify-content: space-between; 
 }
@@ -787,22 +792,25 @@ footer .motor {
 
 .icons {
   width: 98%;
-  margin-bottom: 25px;
-  text-align: end;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.icons li { margin-right: 7%; }
+.icons li:last-child { margin-right: 0; }
 .icons li a { text-indent: -9999px; }
 
 .icons li a::before {
   margin-left: 11%;
   float: right;
-  font-size: 22px;
+  font-size: 32px;
   font-family: "FontAwesome";
   text-indent: 0;
 }
 
 .facebook::before {
-  content: \f09a;
+  content: "\f09a";
   color: #365C94;
 }
 
@@ -826,16 +834,25 @@ footer .motor {
   color: #7EC346;
 }
 
-.footer-links { margin-bottom: 20px; }
+.footer-links { 
+  margin-bottom: 20px;
+  text-align: end;
+}
 
 .footer-links li {
-  height: 20px;
+  height: 16px;
   padding: 0 13px;
   border-right: 1px solid #727272;
+  margin-bottom: 8px;
   font-size: 14px;
   font-weight: bold;
   line-height: 25px;
   text-transform: capitalize;
+}
+
+.footer-links li:last-child { 
+  border-right: 0;
+  padding-right: 0;
 }
 
 .footer-links li a { color: #A4A5A8; }
@@ -855,11 +872,212 @@ footer .motor {
 
 /*media query starts*/
 /*media query for 995px starts here*/
+
+@media only screen and (max-width: 1200px) {
+
+  header .wrapper { width: 97%; }
+
+  .banner .wrapper div {
+    width: 72%;
+    position: absolute;
+    top: 218px;
+  }
+
+  .banner ul li:first-child { font-size: 15px; }
+  .banner div p { font-size: 25px; }
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  .banner .wrapper div { 
+    padding: 13px 2%;
+    top: 191px;
+  }
+
+  .motors-section .wrapper div:last-child figure { width: 45%;}
+  .mobility-section .wrapper div { padding: 56px 0% 40px 5%; }
+  .mobility-section div p { font-size: 19px; }
+  .mobility-section div h3 { font-size: 28px; }
+  .reviews .employees h3 { font-size: 30px; }
+  .employees div { font-size: 15px; }
+  .reviews .wrapper { width: 92%; }
+}
+
 @media only screen and (max-width: 995px) {
 
+  .header-top { display: none; }
+  
+  .header-bottom h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
 
+  .hamburger {
+    width: 64%;
+    height: 25px;
+    padding-bottom: 20px;
+    margin: 27px 3% 0 2%;
+    display: flex;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+  }
 
-}  
+  .bar {
+    width: 4%;
+    height: 4px;
+    position: absolute;
+    top: 38px;
+    border-radius: 5px;
+    background: #000;
+    transition: all .5s ease-in-out;
+  }
+
+  .bar::before,
+  .bar::after {
+    content: "";
+    width: 98%;
+    height: 4px;
+    position: absolute;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    background: #000;
+    left: 1%;
+  }
+
+  .bar::before { top: -8px; }
+  .bar::after { top: 8px; }
+
+  .menu ul {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #46525C;
+    top: 60px;
+    left: -100%;
+    text-align: left;
+    transition: 1s;
+  }
+
+  .menu { width: 7%; }
+  .menu ul li a { color: #fff; }
+
+  .menu ul li {
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .menu:hover nav ul { left: 0; }
+
+  .banner .wrapper div {
+    padding: 8px 2%;
+    top: 183px;
+  }
+
+  .video-section p { font-size: 20px; }
+  .video-section iframe { width: 70%; }
+  .foundation-section h2 { font-size: 26px; }
+
+  .motors-section .wrapper,
+  .mobility-section .wrapper {
+    max-width: 1360px;
+    width: 90%;
+    display: block;
+  }
+
+  .motors-section .wrapper div:first-child {
+    width: 86%;
+    padding: 70px 40px;
+  }
+
+  .motors-section .wrapper div:last-child { 
+    width: 100%;
+    justify-content: center;
+  }
+  .motors-section .wrapper div:last-child figure { width: 30%; }
+
+  .mobility-section figure {
+    width: 75%;
+    margin: 40px auto;
+  }
+
+  .mobility-section .wrapper div {
+    width: 75%;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .mobility-section div h3 { margin-bottom: 20px; }
+
+  .reviews .employees {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .reviews .employees h3 { margin-bottom: 15px; }
+  .percent-rating { padding: 38px 0; }
+
+  .star-rating,
+  .percent-rating,
+  .rating-review figure { 
+    width: 50%;
+    margin: 25px auto;
+  }
+
+  .rating-review { 
+    width: 100%;
+    display: block;
+  }
+
+  footer .logo {
+    margin: 0 auto;
+    font-size: 55px;
+    letter-spacing: 5px;
+  }
+
+  footer .wrapper div:nth-child(2) {
+    width: 100%;
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  .icons { justify-content: center; }
+  .footer-links,
+  .copyright { text-align: center; }
+
+} 
+
+@media only screen and (max-width: 768px) {
+
+  .banner .wrapper div { top: 140px; }
+  .banner ul li:first-child { font-size: 13px; }
+  .banner div p { font-size: 18px; }
+  footer .wrapper { flex-direction: column; }
+}
+
+/* @media only screen and (max-width: 540px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+} */
 
 @media only screen and (min-width: 996px) {
 
@@ -937,6 +1155,11 @@ footer .motor {
 
   footer .logo a:hover {
     color: #5167B4;
+    transition: 1s;
+  }
+
+  .icons li a:hover::before {
+    color: #595959;
     transition: 1s;
   }
   /* footer end */
