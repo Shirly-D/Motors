@@ -419,6 +419,8 @@ li {
   color: #2B46A9;
 }
 
+.active-content { display: block; }
+
 .foundation-section .leadership figure { 
   width: 40%; 
   display: inline-block;
