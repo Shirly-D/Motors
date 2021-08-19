@@ -56,7 +56,7 @@ for (var j = 0; j < tab.length; j++) {
 
 function city(e, tabName) {
     var i;
-    var tabList = document.querySelectorAll('.city-name');
+    var tabList = document.querySelectorAll('.tab-hide');
     for (i = 0; i < tabList.length; i++) {
         var tabContent = tabList[i].getAttribute('id');
         tabList[i].classList.remove('active-content');
