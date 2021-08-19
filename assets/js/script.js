@@ -48,23 +48,22 @@ var tab = document.querySelectorAll('.tab');
 for (var j = 0; j < tab.length; j++) {
         tab[j].addEventListener('click', function(e){
             if (this == e.target) {
-           var cityName = e.target.getAttribute("data-city");
-           city(e, cityName);
+           var tabList = e.target.getAttribute("data-tab");
+           city(e, tabList);
         }
     });
 }
 
-function city(e, nameOfCity) {
+function city(e, tabName) {
     var i;
-    var cityName = document.querySelectorAll('.city-name');
-    for (i = 0; i < cityName.length; i++) {
-        var currCity = cityName[i].getAttribute('id');
-        cityName[i].classList.remove('active-content');
-        tab[i].className =tab[i].className.replace(" active", "");
+    var tabList = document.querySelectorAll('.city-name');
+    for (i = 0; i < tabList.length; i++) {
+        var tabContent = tabList[i].getAttribute('id');
+        tabList[i].classList.remove('active-content');
+        tab[i].className =tab[i].classList.remove("active");
     }
-    document.querySelector('#' + nameOfCity).classList.add('active-content');
+    document.querySelector('#' + tabName).classList.add('active-content');
     e.target.className += " active";
-    console.log(document.querySelector('#' + nameOfCity)); 
 }
 
 
