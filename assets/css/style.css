@@ -534,7 +534,7 @@ li {
 .none { display: none; }
 .active { display: block; }
 
-.tab-hide { display: none; }
+/* .tab-hide { display: none; } */
 
 /* foundation section end */
 
@@ -887,8 +887,6 @@ footer .motor {
 
   .banner ul li:first-child { font-size: 15px; }
   .banner div p { font-size: 25px; }
-
-
 
 }
 
