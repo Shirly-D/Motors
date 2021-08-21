@@ -67,11 +67,11 @@ function city(e, tabName) {
         console.log(tabContent);
         tabList[i].classList.remove('active-content');
         console.log(tabList[i]);
-        tab[i].className =tab[i].classList.remove("active");
+        tab[i].className =tab[i].className.replace(" active-tab", "");
         console.log(tab[i].className);
     }
     document.querySelector('#' + tabName).classList.add('active-content');
-    e.target.className += " active";
+    e.target.className += " active-tab";
     console.log(e.target.className);
 }
 
