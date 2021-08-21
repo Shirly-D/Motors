@@ -114,9 +114,8 @@ li {
 }
 
 .header-top form {
-  width: 16%;
-  border: 2px solid #C9CACB;
-  display: flex;
+  width: 17.2%;
+  border: 2px solid #97989A;
   position: relative;
 }
 
@@ -126,7 +125,7 @@ li {
 }
 
 .header-top form input::placeholder { 
-  color: #B9B9BD;
+  color: #9C9996;
   font-size: 18px;
 }
 
@@ -183,7 +182,9 @@ li {
 
 .header-top ul {
   width: 13%;
+  height: 24px;
   padding: 12px 0 12px 16px;
+  margin-top: 8px;
 }
 
 .header-top ul li a { text-indent: -9999px; }
@@ -387,7 +388,7 @@ li {
 /* foundation-section start */
 
 .foundation-section h2 {
-  padding: 10px 30px 38px;
+  padding: 10px 30px 58px;
   color: #32489A;
   font-size: 32px;
   font-weight: bolder;
@@ -438,7 +439,6 @@ li {
 }
 
 .foundation-section .active-content { 
-  border: 2px solid #AFB5BB;
   display: block;
 }
 
@@ -447,12 +447,13 @@ li {
 
 .history {
   padding: 0 4% 25px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .history-filter { 
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
 }
 
 .history-filter li { 
@@ -481,7 +482,7 @@ li {
   border: 1px solid #5167B4;
 }
 
-.sustain { padding: 15px 35px; }
+.sustain { padding: 6px 35px; }
 
 .sustain ul {
   width: 60%;
@@ -535,7 +536,7 @@ li {
 .none { display: none; }
 .active { display: block; }
 
-/* .tab-hide { display: none; } */
+.tab-hide { display: none; }
 
 /* foundation section end */
 
