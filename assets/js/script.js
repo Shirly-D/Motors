@@ -16,12 +16,12 @@ for (var i = 0; i < accord.length; i++) {
 
 var filterElem = document.querySelector('.history-filter');
 var filterList = filterElem.querySelectorAll("li");
-for (var i = 0; i < filterElem.length; i++){
-    filterElem[i].addEventListener('click', function(e){
+for (var i = 0; i < filterList.length; i++){
+    filterList[i].addEventListener('click', function(e){
         if (this == e.target) {
             var elem = e.target.innerHTML;
-            for (var k = 0; k < filterElem.length; k++){
-                filterElem[k].classList.remove("active-filter");
+            for (var k = 0; k < filterList.length; k++){
+                filterList[k].classList.remove("active-filter");
             }
             e.target.classList.add("active-filter");
             filter(elem);
