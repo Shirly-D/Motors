@@ -108,6 +108,7 @@ li {
 =================================*/
 
 .header-top {
+  width: 98.5%;
   padding: 35px 0 26px;
   display: flex;
   justify-content: flex-end;  
@@ -115,12 +116,13 @@ li {
 
 .header-top form {
   width: 17.2%;
+  height: 38px;
   border: 2px solid #97989A;
   position: relative;
 }
 
 .header-top form input { 
-  padding: 4px 11px; 
+  padding: 11px; 
   border: none;
 }
 
@@ -152,6 +154,7 @@ li {
 }
 
 .header-top div span:last-child {
+  margin-top: 4px;
   display: inline-block;
   color: #9391A0;
   font-size: 18px;
@@ -176,20 +179,21 @@ li {
 }
 
 .header-top div {
+  height: 24px;
   padding: 4px 18px;
   border-right: 2px solid #9391A0;
+  margin-top: 6px;
 }
 
 .header-top ul {
   width: 13%;
   height: 24px;
   padding: 12px 0 12px 16px;
-  margin-top: 8px;
 }
 
 .header-top ul li a { text-indent: -9999px; }
 .header-top ul li:first-child { margin-left: 0; }
-.header-top ul li { margin-left: 6%; }
+.header-top ul li { margin-left: 6.7%; }
 .header-top ul li a { color: #858386; }
 
 .header-top ul li a::before {
@@ -253,6 +257,7 @@ li {
 
 .menu nav ul li { 
   flex-basis: 20%;
+  font-size: 17px;
   text-align: center;
   text-transform: capitalize; 
 }
@@ -425,7 +430,7 @@ li {
   display: inline-block;
   vertical-align: top;
 }
-.foundation-section .leadership { padding: 9px 50px; }
+.foundation-section .leadership { padding: 9px 50px 33px 50px; }
 
 .foundation-section .leadership p {
   width: 53%;
@@ -864,11 +869,10 @@ footer .motor {
 .copyright {
   color: #97989A;
   font-size: 15px;
+  font-weight: bold;
   text-align: end;
   text-transform: capitalize;
-  
 }
-
 
  /*=================================
   footer styling ends here
