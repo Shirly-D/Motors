@@ -462,6 +462,11 @@ li {
   text-transform: capitalize;    
 }
 
+.history-filter li .active-filter {
+  background-color: #5167B4;
+  color: #fff;
+}
+
 .history-images {
   display: flex;
   flex-wrap: wrap;
