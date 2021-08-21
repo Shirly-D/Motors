@@ -8,13 +8,14 @@ var accord = document.querySelectorAll('.accord-box');
 
 for (var i = 0; i < accord.length; i++) {
     accord[i].addEventListener('click', function(){
-        this.classList.toggle('active');
+        this.classList.toggle('active-accord');
     })
 }
 
 // filter code 
 
-var filterElem = document.querySelectorAll('.filter');
+var filterElem = document.querySelector('.history-filter');
+var filterList = filterElem.querySelectorAll("li");
 for (var i = 0; i < filterElem.length; i++){
     filterElem[i].addEventListener('click', function(e){
         if (this == e.target) {
