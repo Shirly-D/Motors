@@ -419,8 +419,6 @@ li {
   color: #2B46A9;
 }
 
-/* .active-content { display: block; } */
-
 .foundation-section .leadership figure { 
   width: 40%; 
   display: inline-block;
@@ -437,6 +435,11 @@ li {
   color: #73687F;
   letter-spacing: 0.5px;
   line-height: 33px;
+}
+
+.foundation-section .active-content { 
+  border: 2px solid #AFB5BB;
+  display: block;
 }
 
 .leadership p span { border-bottom: 2px solid #919396; }
@@ -462,7 +465,7 @@ li {
   text-transform: capitalize;    
 }
 
-.history-filter li .active-filter {
+.history-filter .active-filter {
   background-color: #5167B4;
   color: #fff;
 }
@@ -527,13 +530,6 @@ li {
   color: #fff;
   font-size: 17px;
   transition: 0.5s ease-out;
-  /* overflow: hidden; */
-}
-
-.foundation-section .active-content { 
-  display: block;
-  /* background-color: #32489A;
-  color: #fff; */
 }
 
 .none { display: none; }
