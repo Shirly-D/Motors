@@ -931,6 +931,12 @@ footer .motor {
     transition: all .5s ease-in-out; 
   }
 
+  /* .hamburger:after {
+    content: "\f00d";
+    font-size: 20px;
+    font-family: "FontAwesome";
+  } */
+
   .bar {
     width: 4%;
     height: 4px;
@@ -940,6 +946,8 @@ footer .motor {
     background: #000;
     transition: all .5s ease-in-out;
   }
+
+  .menu ul .show { display: block; }
 
   .bar::before,
   .bar::after {
@@ -982,12 +990,17 @@ footer .motor {
 
   .banner .wrapper div {
     padding: 8px 2%;
-    top: 183px;
+    top: 146px;
   }
 
   .video-section p { font-size: 20px; }
   .video-section iframe { width: 70%; }
   .foundation-section h2 { font-size: 26px; }
+
+  .foundation-section .leadership p {
+    margin-top: 4px;
+    font-size: 17px;
+  }
 
   .motors-section .wrapper,
   .mobility-section .wrapper {
