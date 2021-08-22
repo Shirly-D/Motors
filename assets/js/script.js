@@ -1,6 +1,7 @@
 var menu = document.querySelector('.menu');
+var navUl = menu.querySelector('ul');
 menu.addEventListener('click', function(e){
-    
+    navUl.classList.toggle('show');
 })
 
 // accordion code
@@ -46,13 +47,10 @@ function filter(elemFilter) {
 // tabs
 
 var tab = document.querySelectorAll('.tab');
-console.log(tab);
 for (var j = 0; j < tab.length; j++) {
         tab[j].addEventListener('click', function(e){
             if (this == e.target) {
            var tabList = e.target.getAttribute("data-tab");
-           console.log(this == e.target);
-           console.log(tabList);
            city(e, tabList);
         }
     });
@@ -61,18 +59,13 @@ for (var j = 0; j < tab.length; j++) {
 function city(e, tabName) {
     var i;
     var tabList = document.querySelectorAll('.tab-hide');
-    console.log(tabList);
     for (i = 0; i < tabList.length; i++) {
         var tabContent = tabList[i].getAttribute('id');
-        console.log(tabContent);
         tabList[i].classList.remove('active-content');
-        console.log(tabList[i]);
         tab[i].className =tab[i].className.replace(" active-tab", "");
-        console.log(tab[i].className);
     }
     document.querySelector('#' + tabName).classList.add('active-content');
     e.target.className += " active-tab";
-    console.log(e.target.className);
 }
 
 
