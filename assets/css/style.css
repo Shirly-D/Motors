@@ -940,29 +940,43 @@ footer .motor {
   .bar {
     width: 4%;
     height: 4px;
+    border-radius: 5px;
     position: absolute;
     top: 38px;
-    border-radius: 5px;
     background: #000;
     transition: all .5s ease-in-out;
   }
 
-  .menu ul .show { display: block; }
+  .bar.ham-active { 
+    background: transparent;
+    transform: translateX(-3px); 
+  }
 
   .bar::before,
   .bar::after {
     content: "";
     width: 98%;
     height: 4px;
-    position: absolute;
     border-radius: 5px;
+    position: absolute;
+    left: 1%;
     transition: all .5s ease-in-out;
     background: #000;
-    left: 1%;
   }
 
-  .bar::before { top: -8px; }
-  .bar::after { top: 8px; }
+  .bar::before { 
+    top: 0px;
+    transform: translateY(7px);
+    transition: 0.6s ease;
+  }
+
+  .bar::after { 
+    top: 0px; 
+    transform: translateY(-7px);
+  }
+
+  .bar.ham-active::after { transform: rotate(45deg); }
+  .bar.ham-active::before { transform: rotate(-45deg); }
 
   .menu ul {
     position: absolute;
@@ -973,8 +987,10 @@ footer .motor {
     left: -100%;
     text-align: left;
     transition: 1s;
+    transform: scaleY(0);
   }
 
+  .menu ul.active { transform: scaleY(1); }
   .menu { width: 7%; }
   .menu ul li a { color: #fff; }
 
