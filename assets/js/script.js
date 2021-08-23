@@ -1,8 +1,12 @@
 var menu = document.querySelector('.menu');
+var bar = document.querySelector('.bar');
 var navUl = menu.querySelector('ul');
 menu.addEventListener('click', function(e){
-    navUl.classList.toggle('show');
+    menu.classList.toggle('active');
+    bar.classList.toggle('ham-active');
+    navUl.classList.toggle('active');
 })
+
 
 // accordion code
 var accord = document.querySelectorAll('.accord-box');
